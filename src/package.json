@@ -1,7 +1,19 @@
 {
-    "name": "my-electron-app",
-    "version": "0.1.0",
-    "author": "your name",
-    "description": "My Electron app",
-    "main": "main.js"
-}
+    "name": "hello-world-electron-js",
+    "version": "1.0.0",
+    "description": "",
+    "main": "main.js",
+    "dependencies": {},
+    "devDependencies": {
+      "electron": "^8.1.1"
+    },
+    "scripts": {
+      "debug": "electron ."
+    },
+    "keywords": [
+      "electronjs",
+      "nodejs"
+    ],
+    "author": "Pablo González",
+    "license": "MIT"
+  }

@@ -1,0 +1,6 @@
+Nota:
+Al configurar vscode (el launch.json), hay que tener en cuenta el uso de la
+carpeta src:
+
+"cwd": "${workspaceFolder}/src",
+"runtimeExecutable": "${workspaceFolder}/src/node_modules/.bin/electron",
