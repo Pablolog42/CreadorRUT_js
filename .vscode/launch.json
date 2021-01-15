@@ -1,8 +1,18 @@
 {
     "version": "0.2.0",
     "configurations": [
+      
       {
-        "name": "Debug Main Process",
+        "name": "GeneraRut",
+        "program": "${workspaceFolder}/src/generaRut.js",
+        "request": "launch",
+        "skipFiles": [
+          "<node_internals>/**"
+        ],
+        "type": "pwa-node"
+      },
+      {
+        "name": "Ejecutar electron",
         "type": "node",
         "request": "launch",
         "cwd": "${workspaceFolder}/src",
@@ -10,5 +20,6 @@
         "args" : ["."],
         "outputCapture": "std"
       }
+
     ]
   }

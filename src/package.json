@@ -1,19 +1,21 @@
 {
-    "name": "hello-world-electron-js",
-    "version": "1.0.0",
-    "description": "",
-    "main": "main.js",
-    "dependencies": {},
-    "devDependencies": {
-      "electron": "^8.1.1"
-    },
-    "scripts": {
-      "debug": "electron ."
-    },
-    "keywords": [
-      "electronjs",
-      "nodejs"
-    ],
-    "author": "Pablo González",
-    "license": "MIT"
-  }
+  "name": "hello-world-electron-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  },
+  "devDependencies": {
+    "electron": "^8.1.1"
+  },
+  "scripts": {
+    "debug": "electron ."
+  },
+  "keywords": [
+    "electronjs",
+    "nodejs"
+  ],
+  "author": "Pablo González",
+  "license": "MIT"
+}
