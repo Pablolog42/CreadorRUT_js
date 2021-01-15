@@ -1,5 +1,6 @@
 const prompt = require('prompt-sync')();
 
+const infoRut = require('info-rut')
 
 
 const pondera = [3, 2, 7, 6, 5, 4, 3, 2]
@@ -31,11 +32,11 @@ function generaDigitosRut(){
     let digitosRut = []  
 
     for (let i = 0; i < 7; i++) {
-    digitosRut.push(randint(0,9))
+    digitosRut.push(randint(0,10))
     }
 
     // Solo puedo partir con 0, 1 o 2
-    digitosRut[0] = randint(0,2)
+    digitosRut[0] = randint(0,3)
 
     if (digitosRut[0] == 2){
         let digito2 = randint(0,3) 
@@ -71,11 +72,26 @@ function generaVerificador(digitosRut){
 
 
 // ESTO NO FUNCA unu
-let n = 500 //Number(prompt("Ingrese el número de RUTs a generar: "));
+let n = 5 //Number(prompt("Ingrese el número de RUTs a generar: "));
 
-for(let i = 0; i < n; i++){
-    let rut = generaDigitosRut()
-    console.log(imprimeArray(rut)+ "-" + generaVerificador(rut))
-}
+
+
+
+
+var delayInMilliseconds = 1000; //1 second
+
+setTimeout(function() {
+    for(let i = 0; i < n; i++){
+        let rut = generaDigitosRut()
+        let rutCompleto = imprimeArray(rut)+ "-" + generaVerificador(rut)
+    
+        infoRut.getPersonByRut(rutCompleto).then(console.log).catch(console.error)
+    }
+}, delayInMilliseconds);
+
+
+
+
+//infoRut.getPersonByRut(rut).then(console.log).catch(console.error)
 
 
